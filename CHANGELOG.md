@@ -14,6 +14,7 @@ BUG FIXES:
 - Correct cleanup error when `nginx_config_cleanup_paths` is not defined.
 - Disable check_mode for `jinja2_version` and Ansible collections validation tasks.
 - The default PID path has changed as of NGINX 1.27.5 and 1.28.0.
+- Properly wrap `http_version` number in quotes in both the template defaults and Molecule tests.
 - NGINX `set_real_ip_from` directive template parameter should be a list.
 
 TESTS:
